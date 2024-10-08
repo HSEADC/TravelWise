@@ -1,2 +1,4 @@
-import './reviews.css';
+import '../../styles/main.scss';
+import './reviews.scss';
+
 console.log('Страница "Отзывы"');
