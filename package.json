@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve",
-    "build": "webpack"
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,6 @@
     "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
-    "start": "^5.1.0",
-    "watch": "^1.0.2"
+    "watch": "^0.13.0"
   }
 }

@@ -1,35 +1,62 @@
-const path = require('path'); // Импортируем модуль "path" для работы с путями файлов
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const pageFolders = ['guides', 'advices', 'reviews', 'routes', 'map'];
+
+const htmlPlugins = pageFolders.map((folder) => {
+  return new HtmlWebpackPlugin({
+    template: `./src/pages/${folder}/index.html`,
+    filename: `${folder}/index.html`,
+    chunks: [folder],
+    inject: true,
+  });
+});
+
 module.exports = {
-  entry: './src/index.js', // Точка входа для сборки проекта
-
+  entry: pageFolders.reduce((entries, folder) => {
+    entries[folder] = `./src/pages/${folder}/${folder}.js`;
+    return entries;
+  }, {}),
   output: {
-    filename: 'bundle.js', // Имя выходного файла сборки
-    path: path.resolve(__dirname, 'dist'), // Путь для выходного файла сборки
+    filename: '[name]/[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
-
+  plugins: [
+    ...htmlPlugins,
+    new HtmlWebpackPlugin({
+      template: './src/pages/guides/index.html',
+      filename: 'index.html',
+      chunks: ['guides'],
+      inject: true,
+    }),
+  ],
+  devServer: {
+    static: './dist',
+    port: 9000,
+    open: true,
+  },
   module: {
     rules: [
       {
-        test: /\.css$/, // Регулярное выражение для обработки файлов с расширением .css
-        use: ['style-loader', 'css-loader'], // Загрузчики, используемые для обработки CSS-файлов
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[name][ext]',
+        },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name][ext]',
+        },
       },
     ],
   },
-
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-    }),
-  ],
-
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist'), // Каталог для статики
-    },
-    open: true, // Автоматически открывать браузер
-  },
-
-  mode: 'development', // Режим сборки
+  mode: 'development',
 };
