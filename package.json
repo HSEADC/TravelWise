@@ -3,13 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://hseadc.github.io/static-site-2024-24",
   "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "start": "webpack serve --open --config webpack.dev.js",
-    "watch": "webpack --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
