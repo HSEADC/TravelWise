@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./home.scss" />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <ol>
+        <li class="home">
+          <a href="home.html"><img src="../../assets/images/logo.png" alt="картинка" /></a>
+        </li>
+        <div class="nav-items">
+          <li class="guides">
+            <div class="dropdown">
+              <button id="guidesDropdownButton" class="dropdown-button">ГАЙДЫ</button>
+              <div id="guidesDropdownContent" class="dropdown-content">
+                <a href="guides.html">Путешествие с ограниченным бюджетом</a>
+                <a href="gastroTures.html">Гастрономические туры</a>
+                <a href="activeRest.html">Путеводитель по активному отдыху</a>
+              </div>
+            </div>
+          </li>
+          <li class="advices">
+            <div class="dropdown">
+              <button id="advicesDropdownButton" class="dropdown-button">СОВЕТЫ</button>
+              <div id="advicesDropdownContent" class="dropdown-content">
+                <a href="advices.html">Что взять с собой в ручную кладь</a>
+                <a href="bagHow.html">Как упаковать чемодан: советы</a>
+                <a href="mistakes.html">Как избежать туристических ловушек</a>
+              </div>
+            </div>
+          </li>
+          <li class="reviews">
+            <a href="reviews.html">ОТЗЫВЫ</a>
+          </li>
+          <li class="routes">
+            <div class="dropdown">
+              <button id="routsDropdownButton" class="dropdown-button">МАРШРУТЫ</button>
+              <div id="routsDropdownContent" class="dropdown-content">
+                <a href="routes.html">10-дневный маршрут по Италии</a>
+                <a href="goldRing.html">Путешествие по Золотому кольцу России</a>
+                <a href="french.html">Маршрут по югу Франции</a>
+              </div>
+            </div>
+          </li>
+          <li class="map">
+            <a href="map.html">КАРТА</a>
+          </li>
+        </div>
+      </ol>
+    </nav>
+
+    <div class="slider">
+      <div class="slides">
+        <div class="slide"><img src="../../assets/images/canada.jpg" alt="couple" /></div>
+        <div class="slide active"><img src="../../assets/images/couple.jpg" alt="canada" /></div>
+        <div class="slide"><img src="../../assets/images/moscowCity.jpg" alt="moscow" /></div>
+      </div>
+      <button class="prev"><img src="../../assets/images/arrowLeft.svg" /></button>
+      <button class="next"><img src="../../assets/images/arrowRight.svg" /></button>
+    </div>
+    <div class="slider-ship">
+      <img src="../../assets/images/ship.png" alt="ship" />
+    </div>
+    <div class="aboutUs">
+      <div class="aboutUs-firstText">
+        <div class="aboutUs-title">
+          <p>Как найти своё путешествие мечты?</p>
+        </div>
+        <div class="aboutUs-description">
+          <p>
+            Готовясь к путешествию мечты, важно учитывать несколько ключевых аспектов, чтобы оно
+            стало действительно незабываемым.
+          </p>
+          <br />
+          <p>
+            Прежде всего, определите свои интересы и предпочтения: хотите ли вы расслабиться на
+            пляже, активно исследовать города или погружаться в культурные мероприятия?
+          </p>
+        </div>
+        <button class="aboutUs-button"><a href="guides.html">А как?</a></button>
+      </div>
+
+      <div class="lines">
+        <img src="../../assets/images/lines.svg" alt="lines" />
+      </div>
+
+      <div class="aboutUs-secondText">
+        <div class="aboutUs-description">
+          <p>После этого установите бюджет и сроки поездки.</p>
+          <br />
+          <p>
+            Это поможет сузить круг возможных направлений. Исследуйте различные направления и
+            читайте отзывы других путешественников, чтобы узнать больше о местах, которые вас
+            интересуют.
+          </p>
+          <br />
+          <p>Все это вы сможете найти на нашем сайте!</p>
+        </div>
+        <button class="aboutUs-button-two"><a href="guides.html">Полетели!</a></button>
+      </div>
+    </div>
+  </body>
+  <script src="./home.js"></script>
+</html>

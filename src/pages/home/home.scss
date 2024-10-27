@@ -1,0 +1,101 @@
+.slider {
+  position: relative;
+  width: 1092px; /* Убедитесь, что это соответствует ширине изображений */
+  overflow: hidden;
+  margin: 0 auto;
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 89px;
+  }
+
+  .slide {
+    min-width: 100%; /* Каждое изображение занимает всю ширину слайдера */
+    box-sizing: border-box;
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+    &.prev {
+      left: 10px;
+    }
+
+    &.next {
+      right: 10px;
+    }
+  }
+}
+
+.nav {
+  margin-bottom: 4em;
+}
+
+.slider-ship {
+  position: absolute;
+  right: 19em;
+  top: 45em;
+}
+
+.aboutUs {
+  color: white;
+  font-size: 15px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUs-title {
+  font-size: 25px;
+}
+
+.aboutUs-firstText,
+.aboutUs-secondText {
+  width: 441px;
+}
+
+.aboutUs-firstText {
+  position: absolute;
+  left: 25em;
+}
+
+.aboutUs-secondText {
+  margin-top: 12em;
+  position: absolute;
+  right: 23em;
+}
+
+.aboutUs-description p {
+  margin: 0;
+}
+
+.aboutUs-description p:last-child {
+  margin-bottom: 5em;
+}
+
+.aboutUs-button {
+  padding: 10px 50px;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #c04da5, #462255);
+  color: white;
+  border: none;
+}
+
+.aboutUs-button-two {
+  padding: 10px 50px;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #432153, #1a6fa7);
+  color: white;
+  border: none;
+  margin-bottom: 5em;
+}
+
+.lines {
+  position: relative;
+}

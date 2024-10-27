@@ -1,10 +1,21 @@
 @import '~normalize.css';
 
+@font-face {
+  font-family: 'MediumRoboto';
+  src: url('../assets/fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RegularRoboto';
+  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  color: white;
+  font-family: 'MediumRoboto';
   margin: 0;
   padding: 0;
+  background: linear-gradient(to right, #036a9c, #c24ea7, #402051);
 }
 
 h1,
@@ -20,5 +31,72 @@ h6 {
 
 a {
   text-decoration: none;
-  color: #007dff;
+  color: #f0f0f0;
+}
+
+ol {
+  display: flex;
+  gap: 18.5em;
+  list-style: none;
+}
+
+.nav-items {
+  margin-top: 1em;
+  font-size: 25px;
+  display: flex;
+  gap: 4em;
+}
+
+.nav-items li a:hover {
+  color: #ff1919;
+}
+
+.nav-items li a:focus {
+  color: #ff1919;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #cdbce7;
+  min-width: 25em;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 0.2em white solid;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-button {
+  color: white;
+  margin-bottom: 1em;
+}
+
+.dropdown-button:hover {
+  color: #ff1919;
+}
+
+button {
+  all: unset;
+}
+
+.footer {
+  display: flex;
+  gap: 42em;
+  justify-content: center;
+  align-items: center;
 }
