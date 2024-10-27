@@ -6,12 +6,73 @@
     <title>Карта</title>
   </head>
   <body>
-    <nav>
-      <a href="guides.html">Гайды</a>
-      <a href="advices.html">Советы</a>
-      <a href="reviews.html">Отзывы</a>
-      <a href="routes.html">Маршруты</a>
-      <a href="map.html">Карта</a>
+    <nav class="nav">
+      <ol>
+        <li class="home">
+          <a href="home.html"><img src="../../assets/images/logo.png" alt="картинка" /></a>
+        </li>
+        <div class="nav-items">
+          <li class="guides">
+            <div class="dropdown">
+              <button id="guidesDropdownButton" class="dropdown-button">ГАЙДЫ</button>
+              <div id="guidesDropdownContent" class="dropdown-content">
+                <a href="guides.html">Путешествие с ограниченным бюджетом</a>
+                <a href="gastroTures.html">Гастрономические туры</a>
+                <a href="activeRest.html">Путеводитель по активному отдыху</a>
+              </div>
+            </div>
+          </li>
+          <li class="advices">
+            <div class="dropdown">
+              <button id="advicesDropdownButton" class="dropdown-button">СОВЕТЫ</button>
+              <div id="advicesDropdownContent" class="dropdown-content">
+                <a href="advices.html">Что взять с собой в ручную кладь</a>
+                <a href="bagHow.html">Как упаковать чемодан: советы</a>
+                <a href="mistakes.html">Как избежать туристических ловушек</a>
+              </div>
+            </div>
+          </li>
+          <li class="reviews">
+            <a href="reviews.html">ОТЗЫВЫ</a>
+          </li>
+          <li class="routes">
+            <div class="dropdown">
+              <button id="routsDropdownButton" class="dropdown-button">МАРШРУТЫ</button>
+              <div id="routsDropdownContent" class="dropdown-content">
+                <a href="routes.html">10-дневный маршрут по Италии</a>
+                <a href="goldRing.html">Путешествие по Золотому кольцу России</a>
+                <a href="french.html">Маршрут по югу Франции</a>
+              </div>
+            </div>
+          </li>
+          <li class="map">
+            <a href="map.html">КАРТА</a>
+          </li>
+        </div>
+      </ol>
     </nav>
+
+    <main class="main-map">
+      <div class="h1">
+        <h1>Где вы уже побывали?</h1>
+      </div>
+      <div>
+        <img src="../../assets/images/map.svg" />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="autors">
+        <p>Гулиянц Виктория</p>
+        <p>Екатерина Российская</p>
+      </div>
+      <p class="year">2024</p>
+      <div class="icons">
+        <img src="../../assets/images/vk.svg" alt="vk" />
+        <img src="../../assets/images/telegram.svg" alt="telegram" />
+        <img src="../../assets/images/youtube.svg" alt="youtube" />
+      </div>
+    </footer>
   </body>
+  <script src="./map.js"></script>
 </html>
