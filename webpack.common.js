@@ -22,9 +22,9 @@ const htmlPlugins = pages.map((folder) => {
 
 htmlPlugins.push(
   new HtmlWebpackPlugin({
-    template: './src/pages/home/index.html',
+    template: './src/pages/preview/index.html',
     filename: 'index.html',
-    chunks: ['home'],
+    chunks: ['preview'],
   }),
 );
 
