@@ -1,35 +1,5 @@
 // import '../../styles/main.scss';
-import './home.scss';
-
-// import logo from '../../assets/images/couple.jpg';
-
-// const img = document.createElement('img');
-// img.src = logo;
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const slides = document.querySelectorAll('.slide');
-//   let currentIndex = 0;
-
-//   const showSlide = (index) => {
-//     const slidesContainer = document.querySelector('.slides');
-//     slidesContainer.style.transform = `translateX(-${index * 100}%)`;
-//   };
-
-//   const nextSlide = () => {
-//     currentIndex = (currentIndex + 1) % slides.length;
-//     showSlide(currentIndex);
-//   };
-
-//   const prevSlide = () => {
-//     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-//     showSlide(currentIndex);
-//   };
-
-//   document.querySelector('.next').addEventListener('click', nextSlide);
-//   document.querySelector('.prev').addEventListener('click', prevSlide);
-
-//   showSlide(currentIndex);
-// });
+import './markets.scss';
 
 // document.addEventListener('DOMContentLoaded', function () {
 //   const guidesDropdownButton = document.getElementById('guidesDropdownButton');
@@ -67,4 +37,4 @@ import './home.scss';
 //   });
 // });
 
-console.log('Страница "Главная"');
+console.log('Страница "Рынки"');
