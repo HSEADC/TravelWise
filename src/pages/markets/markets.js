@@ -1,5 +1,5 @@
 // import '../../styles/main.scss';
-import './markets.scss';
+// import './markets.scss';
 
 // document.addEventListener('DOMContentLoaded', function () {
 //   const guidesDropdownButton = document.getElementById('guidesDropdownButton');

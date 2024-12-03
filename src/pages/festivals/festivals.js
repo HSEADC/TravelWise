@@ -1,5 +1,5 @@
 // import '../../styles/main.scss';
-import './festivals.scss';
+// import './festivals.scss';
 
 // document.addEventListener('DOMContentLoaded', function () {
 //   const guidesDropdownButton = document.getElementById('guidesDropdownButton');

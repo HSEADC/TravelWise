@@ -1,5 +1,5 @@
 // import '../../styles/main.scss';
-import './home.scss';
+// import './home.scss';
 
 // import logo from '../../assets/images/couple.jpg';
 

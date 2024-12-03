@@ -1,5 +1,5 @@
 // import '../../styles/main.scss';
-import './restaurants.scss';
+// import './restaurants.scss';
 
 // document.addEventListener('DOMContentLoaded', function () {
 //   const guidesDropdownButton = document.getElementById('guidesDropdownButton');
