@@ -1,7 +1,191 @@
+a {
+  text-decoration: none;
+  color: #3b0259;
+}
+
+body {
+  margin: 97px 80px 39px 80px;
+  padding: 0;
+  background-color: #9973af;
+  color: #3b0259;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.nav-item {
+  font-size: 22px;
+}
+
+.styleguide {
+  margin-left: 37px;
+}
+
+.logo-img {
+  width: 32px;
+}
+
+.h1 {
+  font-size: 89px;
+  width: 1390px;
+  margin-bottom: 57px;
+}
+
+.cake-img {
+  max-width: 1760px;
+  margin-bottom: 77px;
+}
+
+.cake {
+  width: 1700px;
+  border-radius: 32px;
+}
+
+.dish {
+  width: 139px;
+}
+
+.plate {
+  width: 593px;
+  height: 578px;
+}
+
+.plates {
+  background-image: url('../../assets/images/plates.png');
+  background-repeat: no-repeat;
+  height: inherit;
+  background-position: 50% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.word-purple {
+  border: 1px solid #3b0259;
+  border-radius: 8px;
+  background-color: #3b0259;
+  color: #9973af;
+  padding: 0 4px 0 4px;
+}
+
+.word-lightPurple {
+  border: 1px solid #6d2f8d;
+  border-radius: 8px;
+  background-color: #9973af;
+  color: #6d2f8d;
+  padding: 0 4px 0 4px;
+}
+
+.howToEatTasty {
+  background-color: #6d2f8d;
+  position: relative;
+  width: 100vw;
+  left: calc(-50vw + 50%);
+  border-radius: 15px;
+  height: 911px;
+  margin-bottom: 74px;
+}
+
+.p {
+  font-size: 86px;
+  color: #9973af;
+  width: 1237px;
+}
+
+.toEat {
+  margin-left: 100px;
+}
+
+.logo-eatTasty-img {
+  width: 67px;
+}
+
+.logo-eatTasty {
+  font-size: 75px;
+  color: #9973af;
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  font-weight: bold;
+}
+
+.bestArticles {
+  display: flex;
+  gap: 127px;
+}
+
+.textWithBorder {
+  border: 2px solid #9973af;
+  border-radius: 10px;
+  padding: 13px 16px;
+  font-size: 21px;
+}
+
+.bestArticles-img-block {
+  width: 873px;
+}
+
+.wordsWithBorder {
+  display: flex;
+  gap: 13px;
+}
+
+.aboutArticle {
+  font-size: 42px;
+  margin: 0;
+}
+
+.img-block-description {
+  background-color: #3b0259;
+  color: #9973af;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 19px 207px 26px 26px;
+  margin-top: -5px;
+}
+
+.spoon {
+  width: 341px;
+}
+
+.bestArticles-text-block {
+  width: 684px;
+}
+
+.hotDish {
+  position: absolute;
+  right: 8em;
+}
+
+.bestArticles-text-description {
+  font-size: 29px;
+  margin-bottom: 93px;
+}
+
+.bestArticles-text {
+  font-size: 86px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.buttonReadArticles {
+  font-size: 26px;
+}
+
+.button-dark {
+  border-radius: 20px;
+  padding: 23px 55px;
+  background-color: #3b0259;
+  color: #9973af;
+  border: none;
+}
+
 .form {
   position: absolute;
-  top: 100em;
-  left: 40em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +201,7 @@ input {
   width: 30em;
   height: 2em;
   margin-bottom: 2em;
+  background-color: #3b0259;
 }
 
 textarea {
@@ -31,7 +216,15 @@ textarea {
 .button-submit {
   padding: 10px 50px;
   border-radius: 50px;
-  background: linear-gradient(to bottom, #c04da5, #462255);
-  color: white;
+  background-color: #3b0259;
+  color: #9973af;
   border: none;
+}
+
+.logo {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: bold;
 }

@@ -1,18 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 @import '~normalize.css';
 
-// @font-face {
-//   font-family: 'MediumRoboto';
-//   src: url('../assets/fonts/Roboto-Medium.ttf') format('truetype');
-// }
-
-// @font-face {
-//   font-family: 'RegularRoboto';
-//   src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
-// }
+@font-face {
+  font-family: 'InterBold';
+  src: url('../assets/fonts/INTER-SEMIBOLD.OTF') format('opentype');
+}
 
 body {
-  color: white;
-  // font-family: 'MediumRoboto';
+  font-family: 'InterBold', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -28,24 +26,24 @@ h6 {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #f0f0f0;
-}
+// a {
+//   text-decoration: none;
+//   color: #f0f0f0;
+// }
 
-ol {
-  display: flex;
-  gap: 18.5em;
-  list-style: none;
-}
+// ol {
+//   display: flex;
+//   gap: 18.5em;
+//   list-style: none;
+// }
 
-button {
-  all: unset;
-}
+// button {
+//   all: unset;
+// }
 
-.footer {
-  display: flex;
-  gap: 42em;
-  justify-content: center;
-  align-items: center;
-}
+// .footer {
+//   display: flex;
+//   gap: 42em;
+//   justify-content: center;
+//   align-items: center;
+// }
